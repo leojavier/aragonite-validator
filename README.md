@@ -32,3 +32,7 @@ Is a lightweight and onobstrusive field validator that helps you validate any ki
     aragonite.init('formID');
 </script>
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
