@@ -1,0 +1,21 @@
+{
+  "name": "aragonite-form-validator",
+  "version": "1.0.3",
+  "homepage": "https://github.com/leojavier/aragonite-validator",
+  "authors": [
+    "leojavier <info@leojavier.com>"
+  ],
+  "description": "A lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.",
+  "main": "aragonite.js",
+  "keywords": [
+    "form-validator",
+    "field-validator",
+    "regex-validator",
+    "validator",
+    "sanitise",
+    "sanitisation",
+    "sanitize",
+    "sanitization"
+  ],
+  "license": "MIT"
+}
