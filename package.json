@@ -1,0 +1,21 @@
+{
+  "name": "aragonite-form-validator",
+  "version": "1.0.0",
+  "description": "A free lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "form-validator",
+    "field-validator",
+    "regex-validator",
+    "validator"
+  ],
+    "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/leojavier/aragonite-validator.git"
+  },
+  "author": "Leo Javier <info@leojavier.com> (http://www.leojavier.com)",
+  "license": "MIT"
+}
