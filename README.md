@@ -4,6 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+
 ### What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.
 
@@ -34,5 +35,4 @@ Is a lightweight and onobstrusive field validator that helps you validate any ki
 ```
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
