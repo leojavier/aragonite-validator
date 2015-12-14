@@ -1,4 +1,4 @@
-exports.aragonite = (function () {
+var aragonite = (function () {
     //'use strict';
 
     var me = this;
