@@ -1,7 +1,7 @@
 # Aragonite-validator
 
 [![npm version](https://badge.fury.io/js/aragonite-form-validator.svg)](https://badge.fury.io/js/aragonite-form-validator)
-
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 ### What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.
 
