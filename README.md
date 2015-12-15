@@ -1,7 +1,7 @@
-# Aragonite-validator
+﻿# Aragonite-validator
 
 [![npm version](https://badge.fury.io/js/aragonite-form-validator.svg)](https://badge.fury.io/js/aragonite-form-validator)
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg)]()
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 
