@@ -12,8 +12,11 @@ var aragonite = (function () {
         email: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
         phone: /^[0-9]{10,15}/,
         required: '',
-        username: /^([a-zA-Z0-9_-]){6,20}/,
-        password: /^([a-zA-Z0-9_!@#$%^&*-]){8,12}/
+        visa: /^4[0-9]{12}(?:[0-9]{3})?$/,//All Visa card numbers start with a 4. New cards have 16 digits. Old cards have 13.
+        masterCard: /^5[1-5][0-9]{14}$/,//All MasterCard numbers start with the numbers 51 through 55. All have 16 digits.
+        amex: /^3[47][0-9]{13}$/,//American Express card numbers start with 34 or 37 and have 15 digits.
+        discover: /^6(?:011|5[0-9]{2})[0-9]{12}$/,//Discover card numbers begin with 6011 or 65. All have 16 digits.
+        cvv: /^[0-9]{3,4}///Credit cards security code. from 3 to 4 digits
     };
 
     controller = {
@@ -69,6 +72,7 @@ var aragonite = (function () {
             }
         }
     };
+
     /**
      * Initiate the validator
      * @param {string} [elementId] Takes the ID of the form without #
@@ -86,7 +90,6 @@ var aragonite = (function () {
         }
 
         var group = fields.length;
-
 
         var validate = function () {
             for (var i = 0; i < group; i++) {

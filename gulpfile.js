@@ -22,5 +22,5 @@ gulp.task('compress',['min'], function () {
 });
 
 gulp.task('build', ['compress'], function () {
-    console.log('Build completed...')
+    console.log('Build completed...');
 });

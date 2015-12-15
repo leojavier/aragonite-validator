@@ -6,10 +6,20 @@
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ### What is Aragonite?
-Is a lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.
+Is a lightweight and onobstrusive field validator that helps you validate any kind of 
+data before submiting to your server.
 
-### 1.Getting Started
-`npm install aragonite-form-validator`
+### Table of Contents
+- [1. Getting Started](#1.Getting-Started)
+- [2. Load the plugin in your page ](#2.-Load-the-plugin-in-your-page)
+- [3. Initialize the plugin ](#3.-Initialize-the-plugin)
+- [4. Options ](#Data-type-Options)
+- [5. License agreement ](#License-MIT)
+
+### 1. Getting Started
+**Npm:** `npm install aragonite-form-validator`
+
+**Bower:** `bower install aragonite-form-validator`
 
 ### 2. Load the plugin in your page 
 
@@ -33,24 +43,31 @@ Is a lightweight and onobstrusive field validator that helps you validate any ki
 ```
 >Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of `data-type` you need to validate
 
-### 3. Initialize the plugin and pass the ID of your form
+### 3. Initialize the plugin
 ```
 <script type="text/javascript">
     aragonite.init('formID');
 </script>
 ```
 
+>Note: *You need to pass the `ID` of your form. In this case `demo-form`*.
+
 ### Data-type Options
 
 Option  | Behavior
 ------------- | -------------
 **string**  | Validate if the content submited by the user is a string. It doesn't accept numbers or special characters.
-**alphaNumeric**  | This option will accept letters, numbers , - and _
+**alphaNumeric**  | This option will accept letters, numbers , - and _.
 **phone**  | This option accept only numbers, not special characters. A minimum of 10 characters and a maximum of 15.
+**visa**  | All Visa card numbers start with a 4. New cards have 16 digits. Old cards have 13.
+**Mastercard**  | All MasterCard numbers start with the numbers 51 through 55. All have 16 digits.
+**American Express**  | American Express card numbers start with 34 or 37 and have 15 digits.
+**Discover**  | Discover card numbers begin with 6011 or 65. All have 16 digits.
+**card (CVV)**  | Credit cards security code. from 3 to 4 digits(Amex)
 
 ### License MIT
 The MIT License (MIT)
-Copyright (c) 2015 Leo Javier
+Copyright (c) 2015 [Leo Javier](http://www.leojavier.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
