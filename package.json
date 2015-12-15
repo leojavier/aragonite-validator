@@ -4,7 +4,7 @@
   "description": "A lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.",
   "main": "aragonite.js",
   "scripts": {
-    "test": "node test.js && zuul --ui tape --local 3000 -- test.js",
+    "test": "node test.js",
     "ci": "node test.js"
   },
   "keywords": [
