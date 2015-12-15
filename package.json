@@ -1,6 +1,6 @@
 {
   "name": "aragonite-form-validator",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A free lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.",
   "main": "aragonite.js",
   "scripts": {
