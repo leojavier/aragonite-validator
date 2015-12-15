@@ -1,27 +1,27 @@
-﻿# Aragonite-validator
+﻿#Aragonite-validator
 
 [![npm version](https://badge.fury.io/js/aragonite-form-validator.svg)](https://badge.fury.io/js/aragonite-form-validator)
 [![David](https://david-dm.org/leojavier/aragonite-validator.svg)]()
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-### What is Aragonite?
+###What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of 
 data before submiting to your server.
 
-### Table of Contents
+###Table of Contents
 - [1. Getting Started](#1.Getting-Started)
 - [2. Load the plugin in your page ](#2.-Load-the-plugin-in-your-page)
 - [3. Initialize the plugin ](#3.-Initialize-the-plugin)
 - [4. Options ](#Data-type-Options)
 - [5. License agreement ](#License-MIT)
 
-### 1. Getting Started
+###1. Getting Started
 **Npm:** `npm install aragonite-form-validator`
 
 **Bower:** `bower install aragonite-form-validator`
 
-### 2. Load the plugin in your page 
+###2. Load the plugin in your page 
 
 ```
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ data before submiting to your server.
 ```
 >Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of `data-type` you need to validate
 
-### 3. Initialize the plugin
+###3. Initialize the plugin
 ```
 <script type="text/javascript">
     aragonite.init('formID');
@@ -52,7 +52,7 @@ data before submiting to your server.
 
 >Note: *You need to pass the `ID` of your form. In this case `demo-form`*.
 
-### Data-type Options
+###Data-type Options
 
 Option  | Behavior
 ------------- | -------------
@@ -65,9 +65,9 @@ Option  | Behavior
 **Discover**  | Discover card numbers begin with 6011 or 65. All have 16 digits.
 **card (CVV)**  | Credit cards security code. from 3 to 4 digits(Amex)
 
-### License MIT
+###License MIT
 The MIT License (MIT)
-Copyright (c) 2015 [Leo Javier](http://www.leojavier.com)
+Copyright (c) 2015 [Leo Javier]()
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
