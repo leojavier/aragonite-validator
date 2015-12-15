@@ -1,15 +1,15 @@
 ﻿# Aragonite-validator
 
 [![npm version](https://badge.fury.io/js/aragonite-form-validator.svg)](https://badge.fury.io/js/aragonite-form-validator)
+[![David](https://david-dm.org/leojavier/aragonite-validator.svg)]()
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
 
 ### What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.
 
 ### 1.Getting Started
-`npm install aragonite-form-validator
+`npm install aragonite-form-validator`
 
 ### 2. Load the plugin in your page 
 
