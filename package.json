@@ -1,6 +1,6 @@
 {
   "name": "aragonite-form-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A free lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.",
   "main": "aragonite.js",
   "scripts": {
@@ -11,15 +11,21 @@
     "field-validator",
     "regex-validator",
     "validator",
-    "sanitise", 
-    "sanitisation", 
-    "sanitize", 
-    "sanitization",
+    "sanitise",
+    "sanitisation",
+    "sanitize",
+    "sanitization"
   ],
-    "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/leojavier/aragonite-validator.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leojavier/aragonite-validator.git"
   },
   "author": "Leo Javier <info@leojavier.com> (http://www.leojavier.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-gzip": "^1.2.0",
+    "gulp-rename": "^1.2.2"
+  }
 }
