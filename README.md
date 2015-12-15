@@ -57,14 +57,14 @@ ___
 
 Option  | Behavior
 ------------- | -------------
-**string**  | Validate if the content submited by the user is a string. It doesn't accept numbers or special characters.
-**alphaNumeric**  | This option will accept letters, numbers , - and _.
-**phone**  | This option accept only numbers, not special characters. A minimum of 10 characters and a maximum of 15.
-**visa**  | All Visa card numbers start with a 4. New cards have 16 digits. Old cards have 13.
-**Mastercard**  | All MasterCard numbers start with the numbers 51 through 55. All have 16 digits.
-**American Express**  | American Express card numbers start with 34 or 37 and have 15 digits.
-**Discover**  | Discover card numbers begin with 6011 or 65. All have 16 digits.
-**card (CVV)**  | Credit cards security code. from 3 to 4 digits(Amex)
+`string` | Validate if the content submited by the user is a string. It doesn't accept numbers or special characters.
+`alphaNumeric`  | This option will accept letters, numbers , - and _.
+`phone`  | This option accept only numbers, not special characters. A minimum of 10 characters and a maximum of 15.
+`visa`  | All Visa card numbers start with a 4. New cards have 16 digits. Old cards have 13.
+`mastercard`  | All MasterCard numbers start with the numbers 51 through 55. All have 16 digits.
+`amex`  | American Express card numbers start with 34 or 37 and have 15 digits.
+`discover`  | Discover card numbers begin with 6011 or 65. All have 16 digits.
+`cvv`  | Credit cards security code. from 3 to 4 digits(Amex)
 
 ### License MIT
 The MIT License (MIT)
