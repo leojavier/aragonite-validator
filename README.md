@@ -8,7 +8,7 @@
 ###What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of 
 data before submiting to your server.
-
+___
 ###Table of Contents
 - [1. Getting Started](#1.Getting-Started)
 - [2. Load the plugin in your page ](#2.-Load-the-plugin-in-your-page)
@@ -23,7 +23,7 @@ data before submiting to your server.
 
 ###2. Load the plugin in your page 
 
-```
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +44,8 @@ data before submiting to your server.
 >Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of `data-type` you need to validate
 
 ###3. Initialize the plugin
-```
+
+```javascript
 <script type="text/javascript">
     aragonite.init('formID');
 </script>
