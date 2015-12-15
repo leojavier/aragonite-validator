@@ -1,0 +1,5 @@
+﻿language: node_js
+node_js:
+	-'0.12'
+	-'iojs'
+script: npm tun ci
