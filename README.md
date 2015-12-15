@@ -5,23 +5,23 @@
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-###What is Aragonite?
+### What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of 
 data before submiting to your server.
 ___
-###Table of Contents
+### Table of Contents
 - [1. Getting Started](#1.Getting-Started)
 - [2. Load the plugin in your page ](#2.-Load-the-plugin-in-your-page)
 - [3. Initialize the plugin ](#3.-Initialize-the-plugin)
 - [4. Options ](#Data-type-Options)
 - [5. License agreement ](#License-MIT)
 
-###1. Getting Started
+### 1. Getting Started
 **Npm:** `npm install aragonite-form-validator`
 
 **Bower:** `bower install aragonite-form-validator`
 
-###2. Load the plugin in your page 
+### 2. Load the plugin in your page 
 
 ```HTML
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ ___
 ```
 >Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of `data-type` you need to validate
 
-###3. Initialize the plugin
+### 3. Initialize the plugin
 
 ```javascript
 <script type="text/javascript">
@@ -53,7 +53,7 @@ ___
 
 >Note: *You need to pass the `ID` of your form. In this case `demo-form`*.
 
-###Data-type Options
+### Data-type Options
 
 Option  | Behavior
 ------------- | -------------
@@ -66,7 +66,7 @@ Option  | Behavior
 **Discover**  | Discover card numbers begin with 6011 or 65. All have 16 digits.
 **card (CVV)**  | Credit cards security code. from 3 to 4 digits(Amex)
 
-###License MIT
+### License MIT
 The MIT License (MIT)
 Copyright (c) 2015 [Leo Javier]()
 
