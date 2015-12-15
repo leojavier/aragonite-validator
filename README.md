@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/aragonite-form-validator.svg)](https://badge.fury.io/js/aragonite-form-validator)
 [![David](https://david-dm.org/leojavier/aragonite-validator.svg)]()
+[![Build Status](https://travis-ci.org/leojavier/aragonite-validator.svg?branch=master)](https://travis-ci.org/leojavier/aragonite-validator)
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
