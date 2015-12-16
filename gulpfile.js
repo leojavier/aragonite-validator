@@ -7,6 +7,14 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var gzip = require('gulp-gzip');
 var rename = require("gulp-rename");
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
+
+gulp.task('lint', function () {
+    return gulp.src('aragonite.js')
+      .pipe(jshint())
+      .pipe(jshint.reporter(stylish));
+});
 
 gulp.task('min', function () {
     return gulp.src('aragonite.js')

@@ -1,6 +1,6 @@
 {
   "name": "aragonite-form-validator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A lightweight and onobstrusive field validator that helps you validate any kind of data before submiting to your server.",
   "main": "aragonite.js",
   "scripts": {
@@ -30,6 +30,8 @@
     "gulp-gzip": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "tape": "^4.2.2",
-    "zuul": "^3.8.0"
+    "zuul": "^3.8.0",
+    "gulp-jshint": "^2.0.0",
+    "jshint-stylish": "^2.1.0"
   }
 }
