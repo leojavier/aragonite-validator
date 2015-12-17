@@ -11,10 +11,10 @@ Is a lightweight and onobstrusive field validator that helps you validate any ki
 data before submiting to your server.
 ___
 ### Table of Contents
-- [1. Getting Started](#1.Getting-Started)
-- [2. Load the plugin in your page ](#2.-Load-the-plugin-in-your-page)
-- [3. Initialize the plugin ](#3.-Initialize-the-plugin)
-- [4. Options ](#Data-type-Options)
+- [1. Getting Started](#1.getting-Started)
+- [2. Load the plugin in your page ](#2.-load-the-plugin-in-your-page)
+- [3. Initialize the plugin ](#3.-initialize-the-plugin)
+- [4. Options ](#data-type-Options)
 - [5. License agreement ](#license-mit)
 - [ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
 
