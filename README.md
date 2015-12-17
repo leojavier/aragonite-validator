@@ -15,7 +15,8 @@ ___
 - [2. Load the plugin in your page ](#2.-Load-the-plugin-in-your-page)
 - [3. Initialize the plugin ](#3.-Initialize-the-plugin)
 - [4. Options ](#Data-type-Options)
-- [5. License agreement ](#License-MIT)
+- [5. License agreement ](#license-mit)
+- [ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
 
 ### 1. Getting Started
 **Npm:** `npm install aragonite-form-validator`
