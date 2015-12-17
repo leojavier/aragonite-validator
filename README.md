@@ -11,19 +11,19 @@ Is a lightweight and onobstrusive field validator that helps you validate any ki
 data before submiting to your server.
 ___
 ### Table of Contents
-- [1. Getting Started](#1.getting-Started)
-- [2. Load the plugin in your page ](#2.-load-the-plugin-in-your-page)
-- [3. Initialize the plugin ](#3.-initialize-the-plugin)
+- [1. Getting Started](#1getting-Started)
+- [2. Load the plugin in your page ](#load-the-plugin-in-your-page)
+- [3. Initialize the plugin ](#initialize-the-plugin)
 - [4. Options ](#data-type-Options)
 - [5. License agreement ](#license-mit)
-- [ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
+- [6. ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
 
-### 1. Getting Started
+### Getting Started
 **Npm:** `npm install aragonite-form-validator`
 
 **Bower:** `bower install aragonite-form-validator`
 
-### 2. Load the plugin in your page 
+### Load the plugin in your page 
 
 ```HTML
 <!DOCTYPE html>
@@ -45,17 +45,17 @@ ___
 ```
 >Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of `data-type` you need to validate
 
-### 3. Initialize the plugin
+### Initialize the plugin
 
 ```javascript
 <script type="text/javascript">
-    aragonite.init('formID');
+    aragonite.init('demo-form');
 </script>
 ```
 
 >Note: *You need to pass the `ID` of your form. In this case `demo-form`*.
 
-### Data-type Options
+### Data type Options
 
 Option  | Behavior
 ------------- | -------------
