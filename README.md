@@ -10,6 +10,7 @@
 Is a lightweight and onobstrusive field validator that helps you validate any kind of 
 data before submiting to your server.
 ___
+
 ### Table of Contents
 - [1. Getting Started](#getting-started)
 - [2. Load the plugin in your page ](#load-the-plugin-in-your-page)
