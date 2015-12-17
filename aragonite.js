@@ -1,8 +1,6 @@
 /*jslint node: true */
 var aragonite = (function () {
     //'use strict';
-
-    var me = this;
     var form = null;
 
     var Regex = {
