@@ -1,10 +1,12 @@
 # Aragonite-validator
 
+<a href="https://zenhub.io"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![npm version](https://badge.fury.io/js/aragonite-form-validator.svg)](https://badge.fury.io/js/aragonite-form-validator)
 [![David](https://david-dm.org/leojavier/aragonite-validator.svg)]()
 [![Build Status](https://travis-ci.org/leojavier/aragonite-validator.svg?branch=master)](https://travis-ci.org/leojavier/aragonite-validator)
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/leojavier/aragonite-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
 ### What is Aragonite?
 Is a lightweight and onobstrusive field validator that helps you validate any kind of 
