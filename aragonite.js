@@ -2,6 +2,7 @@
 var aragonite = (function () {
     //'use strict';
     var form = null;
+    var className = null;
 
     var Regex = {
         // List of regex to validate fields
@@ -19,23 +20,27 @@ var aragonite = (function () {
 
     var controller = {
         validate: function (opt) {
-            var reg = new RegExp('(\\s|^)required(\\s|$)');
+            var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+            var classHolder = opt.field.className;
 
             if (!opt.value.match(Regex[opt.dataType])) {
-                opt.field.setAttribute('class', 'required');
+
+                if (classHolder.indexOf(className) < 0) {
+                    opt.field.setAttribute('class', classHolder + ' ' + className);
+                }
+
             } else {
                 var hasClass = function (ele, cls) {
                     return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
                 };
 
-                if (hasClass(opt.field, 'required')) {
-
-                    opt.field.className = opt.field.className.replace(reg, ' ');
+                if (hasClass(opt.field, className)) {
+                    opt.field.className = classHolder.replace(reg, '');
                 }
             }
             if (opt.optional) {
                 if (opt.value.length > 0) {
-                    opt.field.className = opt.field.className.replace(reg, ' ');
+                    opt.field.className = classHolder.replace(reg, '');
                 }
             }
 
@@ -64,7 +69,7 @@ var aragonite = (function () {
 
             }
 
-            if (document.getElementsByClassName('required').length) {
+            if (document.getElementsByClassName(className).length) {
                 return false;
             }
             else {
@@ -139,9 +144,9 @@ var aragonite = (function () {
      */
     var init = function (formId, opt) {
 
-        if (opt.regex) {
-            controller.getRegex(opt.regex);
-        }
+        if (opt && opt.regex) { controller.getRegex(opt.regex); }
+        opt && opt.className ? className = opt.className : className = "required";
+
 
         form = document.getElementById(formId);
 
@@ -214,7 +219,7 @@ var aragonite = (function () {
         };
     }
 })();
- 
+
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
     module.exports = aragonite;
 }

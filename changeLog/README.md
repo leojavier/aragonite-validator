@@ -15,3 +15,8 @@
 ### 1.0.10
 
 - refactoring code
+
+### 1.1.0
+
+- Adding support for custom classNames
+- **[Bugfix]** custom Regex support
