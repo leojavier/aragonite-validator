@@ -17,9 +17,12 @@ ___
 - [1. Getting Started](#getting-started)
 - [2. Load the plugin in your page ](#load-the-plugin-in-your-page)
 - [3. Initialize the plugin ](#initialize-the-plugin)
-- [4. Options ](#data-type-options)
-- [5. License agreement ](#license-mit)
-- [6. ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
+- [4. Customizations](#customizations)
+    * [4.1. Adding a custom CSS className](#adding-a-custom-classname)
+    * [4.2. Adding custom Validation](#adding-custom-validation)
+- [5. Data Type Options ](#data-type-options)
+- [6. License agreement ](#license-mit)
+- [7. ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
 
 ### Getting Started
 **Npm:** `npm install aragonite-form-validator`
@@ -34,6 +37,13 @@ ___
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    
+    <!-- Loading the file aragonite-style-base.css is optional The the only functionality of this 
+    file is to add some CSS properties to the [.required] className that Aragonite will add to the 
+    HTML field when something data is not valid
+    -->
+    <link rel="stylesheet" type="text/css" href="dist/css/aragonite-style-base.css">
+
 </head>
 <body>
     <h1>Sample page</h1>
@@ -42,11 +52,11 @@ ___
         <input type="text" data-type="string" placeholder="Type any string" />
         <input type="text" data-type="phone" placeholder="Type a phone number" />
     </form>
-    <script src="aragonite-form-validator/aragonite.js"></script>
+    <script src="dist/js/aragonite.min.js"></script>
 </body>
 </html>
 ```
->Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of `data-type` you need to validate
+>Note: *The form must have an `ID` attribute, in this case `demo-form`*. In every field you must specify what kind of **`data-type`** you need to validate
 
 ### Initialize the plugin
 
@@ -55,8 +65,45 @@ ___
     aragonite.init('demo-form');
 </script>
 ```
+---
+### Customizations
 
->Note: *You need to pass the `ID` of your form. In this case `demo-form`*.
+##### Adding a custom className
+By default Aragonite will add a class attribute to your HTML field when something is wrong. This className is call
+'required'. However... you might have another `CSS` class already using that name in your project. If that's the case... you can always overwrite Aragonite's default behavior and pass a custom class name.
+
+```javascript
+//className
+<script type="text/javascript">
+    aragonite.init('demo-form', {
+        className: 'myCustomClass'
+    });
+</script>
+```
+>Note: *In thi example when the field is invalid, it will add the CSS Class `myCustomClass`  to the HTML element instead of 'required'*
+
+##### Adding custom validation
+Below you will find a set of options that you can use to validate your forms. I will be adding more options "every week".
+In case you need to use a custom validation you can always pass it as an argument and then use it on your form.
+
+```
+ <form id="demo-form" class="how-form" action="#">
+    <input type="text" data-type="capital" placeholder="Type any string" />
+    <input type="text" data-type="seven" placeholder="Type a phone number" />
+</form>
+```
+```javascript
+<script type="text/javascript">
+    aragonite.init('demo-form', {
+    regex: [
+        { name: 'capital', regex: ^[A-Z][a-z0-9_-]{3,19}$ }, //Will be valid only if the first character is UPPERCASE
+        { name: 'seven', regex: /^[a-zA-Z]{7}$/ }  // Will be valid only if the length of the string is 7 characters
+    ]
+    });
+</script>
+```
+
+>Note: You pass the property `name` of these regex through your `data-type` attribute and Aragonite will do the rest for you. You can pass as many regex as you want*.
 
 ### Data type Options
 
