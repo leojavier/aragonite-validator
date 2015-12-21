@@ -1,4 +1,4 @@
-﻿/*
+/*
 This file in the main entry point for defining Gulp tasks and using Gulp plugins.
 Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
 */
@@ -20,13 +20,13 @@ gulp.task('min', function () {
     return gulp.src('aragonite.js')
       .pipe(uglify())
       .pipe(rename('aragonite.min.js'))
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('compress',['min'], function () {
-    return gulp.src('./dist/aragonite.min.js')
+    return gulp.src('./dist/js/aragonite.min.js')
       .pipe(gzip())
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('build', ['compress'], function () {

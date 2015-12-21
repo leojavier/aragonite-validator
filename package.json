@@ -8,6 +8,7 @@
     "ci": "node test.js && zuul -- test.js"
   },
   "keywords": [
+    "aragonite",
     "form-validator",
     "field-validator",
     "regex-validator",
