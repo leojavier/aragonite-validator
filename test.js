@@ -14,7 +14,7 @@ test('Should validate regular expressiions', function (assert) {
     assert.equal(aragonite.regex.cvv.test(6445), true, "Testing CVV: Should be true");
     assert.equal(aragonite.regex.cvv.test(65478), false, "Testing CVV: Should be false");
     assert.equal(aragonite.regex.cvv.test('asdasd'), false, "Testing CVV: Should be false");
-    
+     
     //Testing string regex
     assert.equal(aragonite.regex.string.test(654), false, "Testing STRING: Should be false");
     assert.equal(aragonite.regex.string.test('this is a text'), true, "Testing STRING: Should be true");
