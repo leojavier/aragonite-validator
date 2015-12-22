@@ -20,3 +20,7 @@
 
 - Adding support for custom classNames
 - **[Bugfix]** custom Regex support
+
+### 1.1.2
+
+- Adding support for custom error messages
