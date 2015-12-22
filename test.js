@@ -8,18 +8,19 @@ var test = require('tape');
 */
 
 test('Should validate regular expressiions', function (assert) {
-    assert.equal(aragonite.regex.cvv.test(654), true, "Testing CVV: Should be true");
-    assert.equal(aragonite.regex.cvv.test(64), false, "Testing CVV: Should be false");
-    assert.equal(aragonite.regex.cvv.test('@~_'), false, "Testing CVV: Should be false");
-    assert.equal(aragonite.regex.cvv.test(6445), true, "Testing CVV: Should be true");
-    assert.equal(aragonite.regex.cvv.test(65478), false, "Testing CVV: Should be false");
-    assert.equal(aragonite.regex.cvv.test('asdasd'), false, "Testing CVV: Should be false");
+    'use strict';
+    assert.equal(aragonite.regex.cvv.value.test(654), true, "Testing CVV: Should be true");
+    assert.equal(aragonite.regex.cvv.value.test(64), false, "Testing CVV: Should be false");
+    assert.equal(aragonite.regex.cvv.value.test('@~_'), false, "Testing CVV: Should be false");
+    assert.equal(aragonite.regex.cvv.value.test(6445), true, "Testing CVV: Should be true");
+    assert.equal(aragonite.regex.cvv.value.test(65478), false, "Testing CVV: Should be false");
+    assert.equal(aragonite.regex.cvv.value.test('asdasd'), false, "Testing CVV: Should be false");
      
     //Testing string regex
-    assert.equal(aragonite.regex.string.test(654), false, "Testing STRING: Should be false");
-    assert.equal(aragonite.regex.string.test('this is a text'), true, "Testing STRING: Should be true");
-    assert.equal(aragonite.regex.string.test("this, is. a-text sample's"), true, "Testing STRING: Should be true");
-    assert.equal(aragonite.regex.string.test('another test %$^'), false, "Testing STRING: Should be false");
+    assert.equal(aragonite.regex.string.value.test(654), false, "Testing STRING: Should be false");
+    assert.equal(aragonite.regex.string.value.test('this is a text'), true, "Testing STRING: Should be true");
+    assert.equal(aragonite.regex.string.value.test("this, is. a-text sample's"), true, "Testing STRING: Should be true");
+    assert.equal(aragonite.regex.string.value.test('another test %$^'), false, "Testing STRING: Should be false");
 
     assert.end();
 });
