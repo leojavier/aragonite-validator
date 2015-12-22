@@ -20,6 +20,7 @@ ___
 - [4. Customizations](#customizations)
     * [4.1. Adding a custom CSS className](#adding-a-custom-classname)
     * [4.2. Adding custom Validation](#adding-custom-validation)
+    * [4.3.  Adding custom error messages](#adding-custom-error-messages)
 - [5. Data Type Options ](#data-type-options)
 - [6. License agreement ](#license-mit)
 - [7. ChangeLog](https://github.com/leojavier/aragonite-validator/tree/master/changeLog)
@@ -82,6 +83,8 @@ By default Aragonite will add a class attribute to your HTML field when somethin
 ```
 >Note: *In thi example when the field is invalid, it will add the CSS Class `myCustomClass`  to the HTML element instead of 'required'*
 
+___
+
 ##### Adding custom validation
 Below you will find a set of options that you can use to validate your forms. I will be adding more options "every week".
 In case you need to use a custom validation you can always pass it as an argument and then use it on your form.
@@ -96,7 +99,7 @@ In case you need to use a custom validation you can always pass it as an argumen
 <script type="text/javascript">
     aragonite.init('demo-form', {
     regex: [
-        { name: 'capital', regex: ^[A-Z][a-z0-9_-]{3,19}$ }, //Will be valid only if the first character is UPPERCASE
+        { name: 'capital', regex: /^[A-Z][a-z0-9_-]{3,19}$/ }, //Will be valid only if the first character is UPPERCASE
         { name: 'seven', regex: /^[a-zA-Z]{7}$/ }  // Will be valid only if the length of the string is 7 characters
     ]
     });
@@ -104,6 +107,42 @@ In case you need to use a custom validation you can always pass it as an argumen
 ```
 
 >Note: You pass the property `name` of these regex through your `data-type` attribute and Aragonite will do the rest for you. You can pass as many regex as you want*.
+
+___
+
+##### Adding custom error messages
+Aragonite wire the error messages automatically for you. You just need to create a **`label`** element and set the `for` attribute of the label to the `inputName-error`. The following example shows you how to wire a simple Email input field.
+
+```html
+<label for="email-error"></label>
+<input type="text" name="email" value="" data-type="email" placeholder="Type an Email address" />
+```
+>Note: You pass the property `name` of the targeted field in this case `email` an then the `error` keyword separated by a dash. `email-error`*.
+
+
+```html
+<form id="demo-form-custom-labels" class="how-form" action="#">
+   <label for="email">E-mail</label>
+   <label for="email-error" class="aragonite-error-message"></label>
+   <input type="text" name="email" value="" data-type="email" placeholder="Type an Email address" />
+   <label for="string">First name</label>
+   <label for="string-error" class="aragonite-error-message"></label>
+   <input type="text" name="string" value="" data-type="string" placeholder="Type any string" />
+   <label for="phone">Phone number</label>
+   <label for="phone-error" class="aragonite-error-message"></label>
+   <input type="text" name="phone" value="" data-type="phone" placeholder="Type a phone number" />
+</form>
+```
+
+```javascript
+<script type="text/javascript">
+aragonite.init('demo-form-custom-labels');
+</script>
+```
+
+>Note: You pass the property `name` of these regex through your `data-type` attribute and Aragonite will do the rest for you. You can pass as many regex as you want*.
+
+___
 
 ### Data type Options
 
